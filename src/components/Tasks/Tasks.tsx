@@ -43,7 +43,8 @@ export function Tasks() {
   function completeTask(taskToComplete: number) {
     const updatingTaskValue = toDoList.map((item) => {
       if (item.id === taskToComplete) {
-        item.isConcluded = true;
+        const currentCompletionValue = item.isConcluded;
+        item.isConcluded = !currentCompletionValue;
       }
 
       return item;
