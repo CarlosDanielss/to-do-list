@@ -1,9 +1,15 @@
-import styles from "./App.module.css";
+import { Header } from "./components/Header/Header";
+import { Tasks } from "./components/Tasks/Tasks";
 
 import "./global.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+      <Tasks />
+    </>
+  );
 }
 
 export default App;

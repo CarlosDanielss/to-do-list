@@ -1,0 +1,39 @@
+.listHeader {
+  width: 100%;
+  margin-top: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.created,
+.completed {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.listHeader h3 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.created h3 {
+  color: var(--blue-300);
+}
+
+.completed h3 {
+  color: var(--purple-300);
+}
+
+.listHeader span {
+  padding: 2px 8px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  border-radius: 16px;
+  color: var(--gray-200);
+  background: var(--gray-400);
+}
