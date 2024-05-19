@@ -3,8 +3,6 @@
 Este projeto foi desenvolvido durante o curso Ignite da [Rocketseat](https://www.rocketseat.com.br), com o objetivo de aprofundar os conhecimentos em React e boas práticas de programação.
 
 
-[Visualizar projeto.](https://carlosdanielss.github.io/ignite-feed/)
-
 ## Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
