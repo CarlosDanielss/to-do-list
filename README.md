@@ -1,7 +1,5 @@
 # To-do List
 
-Este projeto foi desenvolvido durante o curso Ignite da [Rocketseat](https://www.rocketseat.com.br), com o objetivo de aprofundar os conhecimentos em React e boas práticas de programação.  
-
 <img src="https://i.imgur.com/5ntbgar.png" />
 
 ## Índice
