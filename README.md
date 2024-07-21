@@ -9,7 +9,6 @@
 - [Funcionalidades](#funcionalidades)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
-- [Contato](#contato)
 
 ## Sobre o Projeto
 
