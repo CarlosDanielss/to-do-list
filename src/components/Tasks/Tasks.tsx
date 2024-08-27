@@ -1,9 +1,18 @@
-import { ChangeEvent, FormEvent, InvalidEvent, useState } from "react";
+import {
+  ChangeEvent,
+  FormEvent,
+  InvalidEvent,
+  useEffect,
+  useState,
+} from "react";
 import { PlusCircle } from "phosphor-react";
 
 import { ListHeader } from "../ListHeader/ListHeader";
 import { Empty } from "../Empty/Empty";
 import { Item } from "../Item/Item";
+
+import completedSong from "../../assets/songs/completed-song.mp3";
+import removeSong from "../../assets/songs/remove-song.mp3";
 
 import styles from "./Tasks.module.css";
 
@@ -14,7 +23,15 @@ export interface ToDoListType {
 }
 
 export function Tasks() {
-  const [toDoList, setToDoList] = useState<ToDoListType[]>([]);
+  const [toDoList, setToDoList] = useState<ToDoListType[]>(() => {
+    const recoveringData = localStorage.getItem("ToDoList");
+
+    return recoveringData ? JSON.parse(recoveringData) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("ToDoList", JSON.stringify(toDoList));
+  }, [toDoList]);
 
   const [newTaskText, setNewTaskText] = useState("");
 
@@ -50,6 +67,9 @@ export function Tasks() {
       return item;
     });
 
+    const completeSong = new Audio(completedSong);
+    completeSong.play();
+
     setToDoList(updatingTaskValue);
   }
 
@@ -57,6 +77,9 @@ export function Tasks() {
     const taskWithoutDeleteOne = toDoList.filter(({ id }) => {
       return id !== taskToDelete;
     });
+
+    const deleteSong = new Audio(removeSong);
+    deleteSong.play();
 
     setToDoList(taskWithoutDeleteOne);
   }
