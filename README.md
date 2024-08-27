@@ -2,6 +2,8 @@
 
 <img src="https://i.imgur.com/5ntbgar.png" />
 
+[Visualizar projeto](https://carlosdanielss.github.io/to-do-list/)
+
 ## Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
