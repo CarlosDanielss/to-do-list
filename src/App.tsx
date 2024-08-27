@@ -3,7 +3,7 @@ import { Tasks } from "./components/Tasks/Tasks";
 
 import "./global.css";
 
-function App() {
+export function App() {
   return (
     <>
       <Header />
@@ -11,5 +11,3 @@ function App() {
     </>
   );
 }
-
-export default App;

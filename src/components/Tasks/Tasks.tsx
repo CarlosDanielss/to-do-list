@@ -81,7 +81,7 @@ export function Tasks() {
         </button>
       </form>
       <section>
-        <ListHeader tasks={toDoList}/>
+        <ListHeader tasks={toDoList} />
         {isToDoListEmpty ? (
           <Empty />
         ) : (

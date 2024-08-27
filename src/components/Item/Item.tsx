@@ -39,10 +39,12 @@ export function Item({
         >
           {isConcluded && <Check size={12} weight="bold" />}
         </span>
+
         <p className={`${isConcluded ? styles.paragraphChecked : ""}`}>
           {task}
         </p>
       </label>
+
       <button type="button" onClick={handleDeleteItem}>
         <Trash size={24} />
       </button>
